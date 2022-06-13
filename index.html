@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +7,50 @@
   <title>Picture This!</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header class="header">
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
+    <picture>
+      <source srcset="images/museum-s1600.jpg, 
+      images/museum-s800.jpg 1x, 
+      images/museum-s1600.jpg 2x, 
+      images/museum-s2400.jpg 3x" 
+      media="(min-width:1600px)"> 
+      <source srcset="images/museum-s1280.jpg, 
+      images/museum-s640.jpg 1x, 
+      images/museum-s1280.jpg 2x, 
+      images/museum-s1920.jpg 3x" 
+      media="(min-width:1280px)">
+      <source srcset="images/museum-s960.jpg, 
+      images/museum-s480.jpg 1x, 
+      images/museum-s960.jpg 2x, 
+      images/museum-s1440.jpg 3x" 
+      media="(min-width:960px)">
+      <source srcset="images/museum-ls960.jpg, 
+      images/museum-ls960.jpg 1x, 
+      images/museum-ls1920.jpg 2x, 
+      images/museum-ls2880.jpg 3x" 
+      media="(min-width:960px)">
+      <source srcset="images/museum-ls720.jpg, 
+      images/museum-ls720.jpg 1x, 
+      images/museum-ls1440.jpg 2x, 
+      images/museum-ls1260.jpg 3x" 
+      media="(min-width:720px)">
+      <source srcset="images/museum-ls480.jpg, 
+      images/museum-ls480.jpg 1x, 
+      images/museum-ls960.jpg 2x, 
+      images/museum-ls1440.jpg 3x" 
+      media="(min-width:480px)">
+      <source srcset="images/museum-ls320.jpg, 
+      images/museum-ls320.jpg 1x, 
+      images/museum-ls640.jpg 2x, 
+      images/museum-ls960.jpg 3x" 
+      media="(min-width:320px)">
+      <img src="images/museum.jpg" alt="placeholder">
+    </picture>    
   </header>
 </body>
-
 </html>
